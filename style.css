@@ -1,0 +1,123 @@
+body {
+    width: 500px;
+    margin: 100px auto;
+    position: relative;
+    text-align: center;
+}
+
+.rect {
+    width: 150px;
+    height: 77px;
+    background: black;
+    position: absolute;
+    top: 25px;
+    left: 61px;
+
+}
+
+.front {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    background: black;
+    width: 60px;
+    height: 70px;
+    border-radius: 0 55px 0 0;
+}
+
+.rear {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: black;
+    width: 60px;
+    height: 70px;
+    border-radius: 55px 0 0 0;
+}
+
+.f_window {
+    position: absolute;
+    background: white;
+    width: 42px;
+    height: 15px;
+    border-radius: 0 15px 0 0;
+    padding-bottom: 10px;
+    top: 18px;
+    left: 6px;
+}
+
+.r_window {
+    position: absolute;
+    background: white;
+    width: 42px;
+    height: 15px;
+    border-radius: 15px 0 0 0;
+    padding-bottom: 10px;
+    top: 18px;
+    left: 12px;
+}
+
+.front_hood {
+    position: absolute;
+    background: black;
+    width: 68px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    bottom: -7px;
+}
+
+.rear_hood {
+    position: absolute;
+    background: black;
+    width: 68px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    bottom: -7px;
+    left: -8px;
+}
+
+.tyres,
+.front_tyres {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 30px;
+    position: absolute;
+    border: 3px dashed white;
+    bottom: -90px;
+
+}
+
+.changeTyreColor {
+    /* background:red; */
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+.tyres {
+    left: 0px;
+}
+
+.front_tyres {
+    left: 85px;
+}
+
+.road {
+    height: 10px;
+    background-color: black;
+    position: relative;
+    bottom: -100px;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
